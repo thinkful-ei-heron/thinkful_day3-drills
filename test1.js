@@ -44,41 +44,15 @@ console.log(gandalf);
 gandalf.describe();
 aragorn.evaulateFight(bilbo);
 let characters = [gandalf, bilbo, frodo, aragorn, legolas, arwen];
-
 arwen.describe();
-
-characters.find(item => item.nickname  === 'aragorn').describe();
-let onlyHalflings = characters.Object.keys(filter(function(lotr) {
-  lotr[origin] === 'Hobbit'
-}))
+let onlyHalflings = characters.filter(n => (n.race === 'Hobbit'));
 console.log(onlyHalflings);
 
-let onlyHalflings = character.filter()
-
-//var marvelHeroes =  heroes.filter(function(hero) {
-//	return hero.franchise == “Marvel”;
-//var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-//const result = words.filter(word => word.length > 6);
-
-//console.log(result);
-// expected output: Array ["exuberant", "destruction", "present"]
-
-
-//console.log('hllo wrld');
-//console.log(characters);
-
-
-
-// Name                      | Nickname    | Race       | Origin         | Attack   | Defense  |
-// -----------------------------------------------------------------------------------------------
-// | Gandalf the White         | gandalf     | Wizard     | Middle Earth   | 10       | 6        |
-// -----------------------------------------------------------------------------------------------
-// | Bilbo Baggins             | bilbo       | Hobbit     | The Shire      | 2        | 1        |
-// -----------------------------------------------------------------------------------------------
-// | Frodo Baggins             | frodo       | Hobbit     | The Shire      | 3        | 2        |
-// -----------------------------------------------------------------------------------------------
-// | Aragorn son of Arathorn   | aragorn     | Man        | Dunnedain      | 6        | 8        |
-// -----------------------------------------------------------------------------------------------
-// | Legolas                   | legolas     | Elf        | Woodland Realm | 8        | 5        |
-// ----------------------------------------------------------------------
+//To add a weapon, we would add a key called 'weapon' and then add the appropriate value for each object. 
+//We can do this manually by adding the appropriate code to the factory function (weapon : weapon), and
+//modifying the const declarations for each character appropriately 
+//(const arwen = createCharacter('Arwen Undomiel', 'arwen', 'Half-Elf', 'Rivendell', 5, 5, 'Hadhafang');).
+//For modifying the describe method, we would just edit the text within the back-ticks by adding
+//"who uses a ${weapon}." To change the factory function and the methods, we could write a smaller object with
+//the addition of the weapon key : value pair and the modified describe function, then run Object.assign(obj1, obj2),
+//to merge the changes into the original factory function.
