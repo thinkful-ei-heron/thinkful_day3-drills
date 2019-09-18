@@ -46,7 +46,9 @@ aragorn.evaulateFight(bilbo);
 let characters = [gandalf, bilbo, frodo, aragorn, legolas, arwen];
 arwen.describe();
 let onlyHalflings = characters.filter(n => (n.race === 'Hobbit'));
+let powerfulDudes = characters.filter(n => (n.attack > 5));
 console.log(onlyHalflings);
+console.log(powerfulDudes);
 
 //To add a weapon, we would add a key called 'weapon' and then add the appropriate value for each object. 
 //We can do this manually by adding the appropriate code to the factory function (weapon : weapon), and
