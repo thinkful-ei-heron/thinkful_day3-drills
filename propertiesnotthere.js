@@ -27,9 +27,12 @@ let obj5 = {
 let arr = [obj1, obj2, obj3, obj4, obj5];
 
 
-arr.forEach({
-        if()
-        function(index){
-    console.log(`${index.jobTitle} ${index.name} reports to ${index.boss}.`);
-    };
-})
+arr.forEach(
+  index => {
+    if (Object.keys(index).length !== 3) {
+      console.log(`${index.jobTitle} ${index.name} reports to no one!`);
+    }
+    else {
+      console.log(`${index.jobTitle} ${index.name} reports to ${index.boss}.`);
+    }
+  });
